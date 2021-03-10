@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  width: 60%;
+  background: url(./images/bg-pattern-desktop.svg);
+}
+.image {
+  width: 40%;
+  background-image: url(./images/hero-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo {
+  margin: 5% 0 0 15%;
+}
+.title {
+  margin: 10% 0 0 15%;
+  width: 50%;
+}
+.title h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  line-height: 95%;
+  text-transform: uppercase;
+}
+.title h1 span {
+  letter-spacing: 5px;
+  font-size: 5rem;
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+  padding: 0%;
+  margin: 0%;
+}
+.text {
+  margin: 2% 10% 0 15%;
+  color: hsl(0, 36%, 70%);
+}
+form {
+  margin: 5% 10% 0 15%;
+  border: solid hsl(0, 36%, 70%) 1px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  border-radius: 100px 110px / 120px;
+}
+.error-form {
+  border: solid hsl(0, 93%, 68%) 1px;
+}
+.mail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+}
+#img-error {
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 25px;
+  visibility: hidden;
+}
+
+input {
+  margin-left: 5%;
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 1rem;
+  background: url(./images/bg-pattern-desktop.svg);
+}
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+button {
+  position: relative;
+  width: 25%;
+  height: 50px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  cursor: pointer;
+  border-radius: 100px 100px / 120px;
+}
+.error {
+  margin: 1% 10% 0 17%;
+  color: hsl(0, 74%, 74%);
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
+.attribution {
+  top: 95%;
+  left: 0%;
+  position: absolute;
+  font-size: 0.5rem;
+}
+.attribution a {
+  font-size: 0.6rem;
+  color: hsl(0, 36%, 70%);
+}
+/******************************************** Responsive ********************************************/
+
+@media (max-width: 550px) {
+  body {
+    background: url(./images/bg-pattern-desktop.svg);
+  }
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .content {
+    width: 100%;
+  }
+  .image {
+    display: none;
+  }
+  .logo {
+    margin: 5% 0 5% 5%;
+  }
+  .logo img {
+    height: 25px;
+    width: 80px;
+  }
+  .img-mobile {
+    background-image: url(./images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35vh;
+  }
+  .title {
+    margin: 5% 0 5% 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .title h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 95%;
+    text-transform: uppercase;
+  }
+  .title h1 p {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 95%;
+    margin-left: -16%;
+    text-transform: uppercase;
+  }
+  .title h1 span {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    padding: 0%;
+    margin: 0%;
+  }
+  .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2% 5% 2% 5%;
+    color: hsl(0, 36%, 70%);
+  }
+  form {
+    margin: 5% 10% 0 15%;
+    border: solid hsl(0, 36%, 70%) 1px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    border-radius: 100px 110px / 120px;
+  }
+}
